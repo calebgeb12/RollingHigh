@@ -1,2 +1,2 @@
 # RollingHigh
-A repository for the game "RollingHigh"
+Repo for the mobile game "RollingHigh"
