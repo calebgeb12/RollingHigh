@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - player
+  - heatlh
+  - block
+  - health
+  - platformTrigger
+  - immunity
+  - speed
+  - freeze
+  - newPlatformTrigger
+  - barellPlatform
+  - barellParentTrigger
+  - coin
+  - platformPiece
+  - upButton
+  - downButton
+  - leftButton
+  - rightButton
+  - barrel
+  - barrelFloatingPlatform
+  - barrelPlatform
+  - barrelDeleter
+  - spikes
+  - introCube
+  - redWall
+  - finishLine
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - ballPlayer
+  - Water
+  - UI
+  - barell
+  - barellPlatform
+  - barrelFloatingPlatform
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

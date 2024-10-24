@@ -1,0 +1,65 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class newWorldTiltScript : MonoBehaviour
+{
+    public Rigidbody rb;
+    public float zSpeed;
+    public float rotate;
+    public bool left = false;
+    public float minRotateAngle;
+    public float maxRotateAngle;
+    public float minRotateSpeed;
+    public float maxRotateSpeed;
+
+    public ballScript ballscript;
+
+    public bool freeze;
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        freeze = false;
+        rb = GetComponent<Rigidbody>();
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        zSpeed = Random.Range(minRotateSpeed, maxRotateSpeed);
+        
+        Debug.Log(freeze);
+        if (!(freeze))
+        {
+            if (left)
+            {
+                rotate =  zSpeed * Time.deltaTime;
+                transform.Rotate(0, 0, rotate);
+            }
+
+            else 
+            {
+                rotate = -1 * zSpeed * Time.deltaTime;
+                transform.Rotate(0, 0, rotate);
+            }
+
+            if (transform.eulerAngles.z > minRotateAngle && transform.eulerAngles.z < 200)
+            {
+                left = false;
+            }
+            
+            if (transform.eulerAngles.z < maxRotateAngle && transform.eulerAngles.z > 100)
+            {
+                left = true;
+            }
+        }
+    }
+
+    public void testing()
+    {
+        freeze = true;
+    }
+}
